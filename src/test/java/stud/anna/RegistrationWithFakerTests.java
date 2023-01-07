@@ -1,6 +1,5 @@
 package stud.anna;
 
-import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.Condition.appear;
@@ -13,13 +12,6 @@ public class RegistrationWithFakerTests extends TestBase {
 
     @Test
     void successfulRegistrationTest() {
-        Faker faker = new Faker();
-
-       String userName = faker.name().firstName();
-       String lastName = faker.name().lastName();
-       String userEmail = faker.internet().emailAddress();
-       String userNumber = faker.phoneNumber().subscriberNumber(10);
-       String currentAddress = faker.lebowski().quote();
 
 
         open("/automation-practice-form");
