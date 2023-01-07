@@ -65,6 +65,9 @@ task smoke_tests(type: Test) {
 }
 
 test {
+
+    //systemProperty "chromeoptions.prefs", "int1.accept_languages = en"
+
     useJUnitPlatform()
     systemProperties(System.getProperties())
 }
